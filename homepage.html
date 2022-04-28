@@ -1,0 +1,179 @@
+
+<!--?php /* This page is used to display the static frontpage. */ // Fetch theme header template get_header(); ?--->
+<div id="primary">
+
+
+<div class="custom-homepage-container">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<style>
+    .Jbackground{
+        background-image: url('http://npvnlearning.com/wp-content/uploads/2021/09/bg-webparts-1-scaled.jpg');
+        background-size: cover;
+        
+    }
+    .bg-white{
+       
+        position: relative; 
+    
+
+    }
+    .bg-white::before{
+        opacity: 0.5;
+        background-color: rgba(0,0,0,0.25);
+    }
+
+   
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron Jbackground" >
+                <div>
+                    <h1 class="display-4 text-center"><b>Web Part</b></h1> 
+                
+                    <p class="lead text-center"> <strong>An Online Company, Course, & Transactions Management system.</strong></p>
+                </div>    
+                    <hr class="my-4">
+                    <p><!--<em>Created by the NPVN team.</em>--></p>
+                
+                <div class="text-center">
+                    <a href="Transaction"><button type="button" class="btn btn-md btn-dark">
+                        View Available Initial Transactions
+                    </button></a>
+                    <br><br>
+                    <a href="confirm-transaction-history"><button type="button" class="btn btn-md btn-dark">
+                        View Transactions Awaiting Confirmation
+                    </button></a>
+                </div>
+                <p class="text-right"><em>Created by the NPVN team.</em></p>
+            </div>
+       </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="http://npvnlearning.com/wp-content/uploads/2021/09/company.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Companies</h3>
+                        <p class="card-text text-center">
+                            The partner companies and clients of NPVN. You can also <em>Create</em>, <em>Import</em>, and <em>Edit</em> Companies in the database.
+                        </p>
+                    <a href="Company" class="btn btn-outline-dark btn-block btn-md ">View Companies</a>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+        </div>
+        <br><br>
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="http://npvnlearning.com/wp-content/uploads/2021/09/courses.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Courses</h3>
+                        <p class="card-text text-center">
+                            Courses and Classes offered by NPVN. You can <em>Create</em>, <em>Import</em>, and <em>Edit</em> courses to manage their availability.
+                        </p>
+                    <a href="Course" class="btn btn-outline-dark btn-block btn-md">View Courses</a>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+        </div>
+        <br><br>
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="http://npvnlearning.com/wp-content/uploads/2021/09/User-Management.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h3 class="card-title text-center">User Management</h3>
+                        <p class="card-text text-center">
+                            <em>Edit</em> and <em>delete</em> users here, as well as <em>create</em> a user. Only <strong>Super admins</strong> have access to the User Management.
+                        </p>
+                    <a href="user-management" class="btn btn-outline-dark btn-block btn-md">Manage User Access</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="http://npvnlearning.com/wp-content/uploads/2021/09/invoices.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Initial Invoicing</h3>
+                        <p class="card-text text-center">
+                            You can select a company and their courses of choice and enroll them by creating an invoice. This prepares a transaction for <em>invoice generation.</em>
+                        </p>
+                    <a href="initial-invoice" class="btn btn-outline-dark btn-block btn-md">Create Initial Transaction</a>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+        </div>
+        <br><br>
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="http://npvnlearning.com/wp-content/uploads/2021/09/invoicing.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Confirm Invoices</h3>
+                        <p class="card-text text-center">
+                            After the initial offers have been finalized, a transaction can now be Confirmed and stored. This prepares a transaction for <em>invoice generation.</em>
+                        </p>
+                    <a href="final_transaction" class="btn btn-outline-dark btn-block btn-md">Finalize a Transaction</a>
+                </div>
+                <br><br>
+            </div> 
+            <br><br>
+        </div>
+        <br><br>
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="http://npvnlearning.com/wp-content/uploads/2021/09/alps.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Main Website</h3>
+                        <p class="card-text text-center">
+                            Visit the ALPrograms Customer Website at <code>www.alprograms.com</code> to get the latest on our partner companies and programs, as well as other updates.
+                        </p>
+                    <a href="https://www.alprograms.com/" target="blank" class="btn btn-outline-dark btn-block btn-md">Visit Website</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!--<div class="row">
+        <div class="col">
+            <h3 class="text-center">
+                Initial Transaction Generation
+            </h3>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+            </p> 
+            <a href=""><button type="button" class="btn btn-success btn-block btn-md btn-outline-success">
+                Generate Initial Invoice
+            </button></a>
+        </div>
+        <br>
+        <div class="col">
+            <h3 class="text-center">
+                Final Transaction Generation
+            </h3>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+            </p> 
+            <a href=""><button type="button" class="btn btn-success btn-block btn-md btn-outline-success">
+                Generate Final Invoice
+            </button></a>
+        </div>
+    </div>-->
+</div>
+
+
+</div>
+</div>
+<!-- #primary 
+normal
+<strong>bold</strong>. 
+<em>italics</em> 
+<small>small</small>
+-->
+<!--?php get_footer(); ?-->
